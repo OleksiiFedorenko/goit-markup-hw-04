@@ -8,8 +8,9 @@
   --contacts-color: rgb(255 255 255 / 0.6);
   --header-border-color: #ececec;
   --portfolio-border-color: #eee;
-  --bgn-grey-color: #f5f4fa;
-  --bgn-darkgrey-color: #2f303a;
+  --bg-grey-color: #f5f4fa;
+  --bg-darkgrey-color: #2f303a;
+  --bg-overlay: rgb(47 48 58 / 0.4);
 }
 
 /* general */
@@ -150,7 +151,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--bgn-darkgrey-color);
+  background-color: var(--bg-darkgrey-color);
 }
 
 .footer .logo {
@@ -209,7 +210,10 @@ img {
 
   text-align: center;
 
-  background-color: var(--bgn-darkgrey-color);
+  background-color: var(--bg-darkgrey-color);
+  background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -268,7 +272,7 @@ img {
 .team {
   text-align: center;
 
-  background-color: var(--bgn-grey-color);
+  background-color: var(--bg-grey-color);
 }
 
 .team-list {
@@ -388,7 +392,7 @@ img {
   font-size: 16px;
   line-height: 1.63;
 
-  background-color: var(--bgn-grey-color);
+  background-color: var(--bg-grey-color);
 }
 
 .button.secondary:hover,
